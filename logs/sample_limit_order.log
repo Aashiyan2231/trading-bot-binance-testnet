@@ -1,0 +1,10 @@
+2026-07-15 14:35:08 | WARNING  | trading_bot.client | Running in MOCK mode: no real network requests are made and no real order is placed. Use only for demonstrating CLI/logging behavior.
+2026-07-15 14:35:08 | DEBUG    | trading_bot.client | REQUEST POST /fapi/v1/order (mock) params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'price': None, 'stopPrice': None, 'timestamp': 1784126108033, 'recvWindow': 5000}
+2026-07-15 14:35:08 | INFO     | trading_bot.client | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stopPrice=None
+2026-07-15 14:35:08 | DEBUG    | trading_bot.client | RESPONSE status=200 body={'orderId': 100000001, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'mock_100000001', 'price': '0.00', 'avgPrice': '60000.00', 'origQty': '0.01', 'executedQty': '0.01', 'type': 'MARKET', 'side': 'BUY', 'timeInForce': 'GTC', 'updateTime': 1784126108033}
+2026-07-15 14:35:08 | INFO     | trading_bot.orders | Order placed successfully: orderId=100000001 status=FILLED executedQty=0.01 avgPrice=60000.00
+2026-07-15 14:35:12 | WARNING  | trading_bot.client | Running in MOCK mode: no real network requests are made and no real order is placed. Use only for demonstrating CLI/logging behavior.
+2026-07-15 14:35:12 | DEBUG    | trading_bot.client | REQUEST POST /fapi/v1/order (mock) params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'stopPrice': None, 'timestamp': 1784126112459, 'recvWindow': 5000}
+2026-07-15 14:35:12 | INFO     | trading_bot.client | Placing order: symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=65000.0 stopPrice=None
+2026-07-15 14:35:12 | DEBUG    | trading_bot.client | RESPONSE status=200 body={'orderId': 100000001, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'mock_100000001', 'price': '65000.00', 'avgPrice': '0.00', 'origQty': '0.01', 'executedQty': '0', 'type': 'LIMIT', 'side': 'SELL', 'timeInForce': 'GTC', 'updateTime': 1784126112459}
+2026-07-15 14:35:12 | INFO     | trading_bot.orders | Order placed successfully: orderId=100000001 status=NEW executedQty=0 avgPrice=0.00
